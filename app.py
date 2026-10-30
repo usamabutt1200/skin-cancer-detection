@@ -230,9 +230,38 @@ with right:
     st.markdown('</div>', unsafe_allow_html=True)
 
 st.divider()
-st.caption(
-    "IMPORTANT: Educational demonstration only. This model is trained "
-    "on Benign and Malignant categories and may misclassify other images. "
-    "It is not a medical diagnostic tool. Consult a qualified doctor "
-    "for medical concerns."
-)
+
+st.markdown("""
+<div style="
+    background: linear-gradient(135deg, #102630, #183844);
+    border: 1px solid #c9a85c;
+    border-left: 4px solid #d8b765;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-top: 20px;
+">
+    <div style="
+        color: #e5c778;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    ">
+        ⚕ IMPORTANT MEDICAL NOTICE
+    </div>
+    <div style="
+        color: #edf4f7;
+        font-size: 14px;
+        line-height: 1.8;
+    ">
+        <b>For Educational Use Only</b><br>
+        
+Based on the dataset provided for training, this AI model
+classifies images into Benign and Malignant categories and
+may misclassify other skin conditions. It is not a medical
+diagnostic tool. Please consult a qualified healthcare
+professional for medical concerns.
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
