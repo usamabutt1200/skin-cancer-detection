@@ -143,4 +143,3 @@ st.warning(
     "not a medical device. It cannot diagnose or rule out skin cancer. "
     "For any concerning skin change, consult a qualified doctor."
 )
-</>
